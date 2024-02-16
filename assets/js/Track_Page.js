@@ -300,7 +300,7 @@ function makeGraph(data) {
         let yData = Object.values(timeSeriesData).map(dayData => dayData['4. close']); // array of closing prices for the last month
 
         let chart = new Chart(canvas, {
-            type: 'line',
+            type: 'pie',
             data: {
                 labels: xData,
                 datasets: [{
