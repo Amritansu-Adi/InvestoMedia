@@ -237,7 +237,7 @@ function chart(data, index) {
 
     // Create a new chart
     myCharts[`myChart${index}`] = new Chart(ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: Object.keys(data).filter(key => typeof data[key] === 'number'),
             datasets: [{
